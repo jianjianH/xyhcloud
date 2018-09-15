@@ -1,0 +1,79 @@
+/* miniprogram/pages/donate/donate.wxss */
+.top {
+    height: 350rpx;
+    background: url("http://pb0geuvxr.bkt.clouddn.com/mp/xyhweb/donation/wxtop.png") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.top image {
+    width: 290rpx;
+    height: 240rpx;
+    margin-top: 50rpx;
+}
+
+.describle {
+    padding: 0 25rpx;
+    height: 100%;
+    line-height: 78rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #2c3e50;
+    border-radius: 4px;
+}
+
+.content {
+    padding: 0 25rpx;
+}
+
+.title {
+    height: 78rpx;
+    background-color: #eab90d;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #eab90d;
+    margin: 10rpx 0 35rpx 0;
+}
+
+.title text {
+    float: left;
+    height: 100%;
+    line-height: 78rpx;
+    text-align: center;
+    width: 25%;
+    font-size: 28rpx;
+    color: white;
+}
+
+.donate_content {
+    height: 600rpx;
+    border-radius: 8rpx;
+    box-shadow: 0 0 5rpx #ccc;
+    padding: 16rpx 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.donate_content text {
+    float: left;
+    line-height: 65rpx;
+    font-size: 24rpx;
+    width: 25%;
+    text-align: center;
+}
+
+.net_error {
+    height: 600rpx;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8rpx;
+    box-shadow: 0 0 10rpx red;
+    margin: 10rpx 0 35rpx 0;
+}
+
+.net_error text {
+    font-size: 24rpx;
+    color: red;
+}
