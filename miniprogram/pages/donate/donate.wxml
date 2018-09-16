@@ -4,18 +4,19 @@
         <image src="http://pb0geuvxr.bkt.clouddn.com/mp/xyhweb/donation/ganen.png"></image>
     </view>
     <view class="content">
-        <view class="describle">纪念母校复校40周年、95周年</view>
+        <view class="describle">纪念母校复校40周年、95周年
+        </view>
         <view class="title">
             <text>姓名</text>
             <text>入学年级</text>
             <text>捐赠金额</text>
             <text>捐赠时间</text>
         </view>
-        <scroll-view wx:if="{{donates}}" scroll-y="true" class="donate_content">
-            <view wx:for="{{donates}}" wx:for-item="donate" wx:key="donate.name">
+        <scroll-view wx:if="{{donates}}" scroll-y="true" scroll-top="{{scroll_top}}" bindscrolltolower="bottom" class="donate_content">
+            <view wx:for="{{donates}}" wx:for-item="donate" wx:key="donate.name" bindtouchmove="stopScroll">
                 <text class="table_content">{{donate.name}}</text>
                 <text class="table_content">{{donate.grade}}</text>
-                <text class="table_content" style='{{donate.money > 1000 ? "font-weight: bold;ont" : ""}}'>{{donate.money}}</text>
+                <text class="table_content">{{donate.money}}</text>
                 <text class="table_content">{{donate.date}}</text>
             </view>
         </scroll-view>
@@ -26,4 +27,5 @@
             <text>微信：506177837</text>
         </view>
     </view>
+    <!-- <button open-type="share" class='share'>分享</button> -->
 </view>

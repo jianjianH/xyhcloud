@@ -1,4 +1,5 @@
 /* miniprogram/pages/donate/donate.wxss */
+
 .top {
     height: 350rpx;
     background: url("http://pb0geuvxr.bkt.clouddn.com/mp/xyhweb/donation/wxtop.png") no-repeat center center;
@@ -13,13 +14,12 @@
 }
 
 .describle {
-    padding: 0 25rpx;
     height: 100%;
     line-height: 78rpx;
+    border-radius: 4px;
     text-align: center;
     font-size: 28rpx;
     color: #2c3e50;
-    border-radius: 4px;
 }
 
 .content {
@@ -76,4 +76,23 @@
 .net_error text {
     font-size: 24rpx;
     color: red;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 150rpx;
+    margin-right: 10rpx;
+    width: 120rpx;
+    height: 50rpx;
+    background-image: linear-gradient(-180deg, #ffc600 0%, #eab90d 100%);
+    color: white;
+    text-align: center;
+    border-radius: 25rpx;
+    font-size: 28rpx;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    z-index: 100;
 }
