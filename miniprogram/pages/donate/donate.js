@@ -1,4 +1,5 @@
 // miniprogram/pages/donate/donate.js
+const mta = require('mta-wechat-analysis');
 let arriveBottom = false;
 let interval;
 let preTop = 0;
@@ -17,6 +18,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
+        mta.Page.init();
         let that = this;
 
         wx.showShareMenu({
@@ -53,8 +55,10 @@ Page({
         })
     },
 
-    onShareAppMessage: function (res) {
-        console.log(res)
+    onShareAppMessage: function(res) {
+        mta.Event.stat('donate', {
+            'share': 'true'
+        })
         return {
             title: '江财北京校友会捐款名单',
             path: '/pages/donate/donate',
@@ -102,6 +106,9 @@ Page({
      * 关闭滑动
      */
     stopScroll: function(e) {
+        mta.Event.stat('donate', {
+            'stopscroll': 'true'
+        })
         clearInterval(interval);
         preTop = 0;
     }
