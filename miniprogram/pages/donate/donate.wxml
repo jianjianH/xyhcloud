@@ -8,15 +8,17 @@
         </view>
         <view class="title">
             <text>姓名</text>
-            <text>入学年级</text>
             <text>捐赠金额</text>
+            <text>入学年级</text>
+            <text>筹款来源</text>
             <text>捐赠时间</text>
         </view>
         <scroll-view wx:if="{{donates}}" scroll-y="true" scroll-top="{{scroll_top}}" bindscrolltolower="bottom" class="donate_content">
-            <view wx:for="{{donates}}" wx:for-item="donate" wx:key="donate.name" bindtouchmove="stopScroll">
+            <view wx:for="{{donates}}" wx:for-item="donate" wx:key="donate.name" bindtouchmove="stopScroll" class="donate_content_item">
                 <text class="table_content">{{donate.name}}</text>
-                <text class="table_content">{{donate.grade}}</text>
                 <text class="table_content">{{donate.money}}</text>
+                <text class="table_content">{{donate.grade}}</text>
+                <text class="table_content">{{donate.branch ? donate.branch : "北京校友会"}}</text>
                 <text class="table_content">{{donate.date}}</text>
             </view>
         </scroll-view>

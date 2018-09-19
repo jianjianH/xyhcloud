@@ -32,14 +32,15 @@
     border-radius: 4px;
     box-shadow: 0 0 5px #eab90d;
     margin: 10rpx 0 35rpx 0;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .title text {
-    float: left;
     height: 100%;
     line-height: 78rpx;
     text-align: center;
-    width: 25%;
+    width: 20%;
     font-size: 28rpx;
     color: white;
 }
@@ -54,11 +55,15 @@
     flex-flow: column nowrap;
 }
 
-.donate_content text {
-    float: left;
+.donate_content_item {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.donate_content_item text {
     line-height: 65rpx;
     font-size: 24rpx;
-    width: 25%;
+    width: 20%;
     text-align: center;
 }
 
