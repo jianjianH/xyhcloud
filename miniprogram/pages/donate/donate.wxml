@@ -30,4 +30,5 @@
         </view>
     </view>
     <!-- <button open-type="share" class='share'>分享</button> -->
+    <text class='sum'>捐款总额：{{sum}}元</text>
 </view>

@@ -11,6 +11,7 @@ Page({
     data: {
         donates: undefined,
         scroll_top: 0,
+        sum: 0,
         show_error: false
     },
 
@@ -37,8 +38,15 @@ Page({
             success: function(res) {
                 wx.hideLoading();
                 if (res.data.result === 1) {
+                    let donetes = res.data.data;
+                    let sum = 0.0;
+                    for (let i = 0; i < donetes.length; i++) {
+                        sum += parseFloat(donetes[i].money)
+                    }
+
                     that.setData({
-                        donates: res.data.data
+                        donates: donetes,
+                        sum: sum
                     })
                     that.autoScroll(20, 40, 50);
                 } else {
