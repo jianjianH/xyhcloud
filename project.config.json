@@ -28,21 +28,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
-			"list": [
-				{
-					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "scan",
-					"pathName": "pages/donate/donate",
-					"scene": "1011"
-				}
-			]
+			"current": -1,
+			"list": []
 		}
 	}
 }

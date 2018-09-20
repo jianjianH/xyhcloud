@@ -1,0 +1,4 @@
+<!--miniprogram/pages/news/webview/webview.wxml-->
+<view>
+    <web-view src="{{url}}" bindmessage="getH5Massage"></web-view>
+</view>
