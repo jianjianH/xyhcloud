@@ -95,6 +95,10 @@ Page({
         }
     },
 
+    shareClick: function(){
+        this.stopScroll();
+    },
+
     /**
      * 开启滑动
      */

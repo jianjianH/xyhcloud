@@ -29,6 +29,11 @@
             <text>微信：506177837</text>
         </view>
     </view>
-    <!-- <button open-type="share" class='share'>分享</button> -->
-    <text class='sum'>捐款总额：{{sum}}元</text>
+    <view class='donate_sum'>
+        <text class='sum'>捐款总额</text>
+        <text class='sum'>{{sum}}元</text>
+    </view>
+    <button open-type='share' class='share' plain='true' bindtouchstart='shareClick'>
+        <image src='/images/share_icon.png'></image>
+    </button>
 </view>
