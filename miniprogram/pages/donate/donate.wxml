@@ -33,7 +33,10 @@
         <text class='sum'>捐款总额</text>
         <text class='sum'>{{sum}}元</text>
     </view>
-    <button open-type='share' class='share' plain='true' bindtouchstart='shareClick'>
+    <button open-type='share' class='share' plain='true' bindtouchstart='stopScroll'>
         <image src='/images/share_icon.png'></image>
     </button>
+    <!-- <view class='office'>
+        <official-account></official-account>
+    </view> -->
 </view>

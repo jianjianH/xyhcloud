@@ -128,3 +128,14 @@ button[plain] {
     border-radius: 25rpx;
     font-size: 28rpx;
 }
+
+.office {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
