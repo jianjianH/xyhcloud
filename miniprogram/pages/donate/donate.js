@@ -1,5 +1,6 @@
 // miniprogram/pages/donate/donate.js
 const mta = require('mta-wechat-analysis');
+let app = getApp();
 let arriveBottom = false;
 let interval;
 let preTop = 0;
@@ -26,55 +27,41 @@ Page({
             withShareTicket: true
         });
 
-        wx.showLoading({
-            title: 'loading...',
-        })
-        wx.request({
-            url: "https://www.jcbjxyh.cn/v1/donate/getDonateList",
-            header: {
-                'content-type': 'application/x-www-form-urlencoded',
-            },
-            dataType: 'json',
-            success: function(res) {
-                wx.hideLoading();
-                if (res.data.result === 1) {
-                    let donetes = res.data.data;
-                    let sum = 0.0;
-                    for (let i = 0; i < donetes.length; i++) {
-                        sum += parseFloat(donetes[i].money)
-                    }
-
-                    that.setData({
-                        donates: donetes,
-                        sum: sum
-                    })
-                    that.autoScroll(20, 40, 50);
-                } else {
-                    that.setData({
-                        show_error: true
-                    })
+        app.sendRequest('/v1/donate/getDonateList', {}, true)
+            .then(res => {
+                let donetes = res.data;
+                let sum = 0.0;
+                for (let i = 0; i < donetes.length; i++) {
+                    sum += parseFloat(donetes[i].money)
                 }
-            },
-            fail: function(res) {
+
+                that.setData({
+                    donates: donetes,
+                    sum: sum
+                })
+                setTimeout(function(){
+                    that.autoScroll(20, 40, 50);
+                }, 1000)
+            })
+            .catch(error => {
                 that.setData({
                     show_error: true
                 })
-            }
-        })
+            })
     },
 
-    onReady: function () {
+    onReady: function() {
         const updateManager = wx.getUpdateManager()
 
-        updateManager.onCheckForUpdate(function (res) {
+        updateManager.onCheckForUpdate(function(res) {
             // 请求完新版本信息的回调
         })
 
-        updateManager.onUpdateReady(function () {
+        updateManager.onUpdateReady(function() {
             wx.showModal({
                 title: '更新提示',
                 content: '新版本已经准备好，是否重启应用？',
-                success: function (res) {
+                success: function(res) {
                     if (res.confirm) {
                         // 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
                         updateManager.applyUpdate()
@@ -109,11 +96,13 @@ Page({
             if (arriveBottom) {
                 clearInterval(interval);
                 arriveBottom = false;
-                preTop = 0;
-                that.setData({
-                    scroll_top: 0
-                })
-                setTimeout(start, delay);
+                setTimeout(function() {
+                    preTop = 0;
+                    that.setData({
+                        scroll_top: 0
+                    })
+                    setTimeout(start, delay);
+                }, 3000)
             } else {
                 preTop = that.data.scroll_top;
                 that.setData({
@@ -128,7 +117,9 @@ Page({
      * 滑倒底部
      */
     bottom: function(e) {
-        arriveBottom = true;
+        setTimeout(function(){
+            arriveBottom = true;
+        }, 2000)
     },
 
     /**
