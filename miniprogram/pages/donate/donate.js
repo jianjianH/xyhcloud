@@ -13,6 +13,7 @@ Page({
         donates: undefined,
         scroll_top: 0,
         sum: 0,
+        num: 0,
         show_error: false
     },
 
@@ -37,7 +38,8 @@ Page({
 
                 that.setData({
                     donates: donetes,
-                    sum: sum
+                    sum: sum,
+                    num: donetes.length
                 })
                 setTimeout(function(){
                     that.autoScroll(20, 40, 50);

@@ -4,7 +4,7 @@
         <image src="http://pb0geuvxr.bkt.clouddn.com/mp/xyhweb/donation/ganen.png"></image>
     </view>
     <view class="content">
-        <view class="describle">纪念母校复校40周年、95周年
+        <view class="describle">纪念母校复校40周年、建校95周年
         </view>
         <view class="title">
             <text>姓名</text>
@@ -32,6 +32,10 @@
     <view class='donate_sum'>
         <text class='sum'>捐款总额</text>
         <text class='sum'>{{sum}}元</text>
+    </view>
+    <view class='donate_num'>
+        <text class='sum'>捐款人数</text>
+        <text class='sum'>{{num}}人</text>
     </view>
     <button open-type='share' class='share' plain='true' bindtouchstart='stopScroll'>
         <image src='/images/share_icon.png'></image>

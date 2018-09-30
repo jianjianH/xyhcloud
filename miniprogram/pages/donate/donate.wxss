@@ -87,8 +87,8 @@ button {
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: 50rpx;
-    margin-right: 35rpx;
+    margin-top: 117rpx;
+    margin-right: 50rpx;
     z-index: 999;
     border: none;
 }
@@ -108,10 +108,26 @@ button[plain] {
 
 .donate_sum {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
-    margin-top: 200rpx;
-    margin-right: 10rpx;
+    margin-top: 190rpx;
+    margin-left: 15rpx;
+    width: 200rpx;
+    height: 100rpx;
+    background-image: linear-gradient(-180deg, #ffc600 0%, #eab90d 100%);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50rpx;
+}
+
+.donate_num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 64rpx;
+    margin-left: 15rpx;
     width: 200rpx;
     height: 100rpx;
     background-image: linear-gradient(-180deg, #ffc600 0%, #eab90d 100%);
@@ -139,3 +155,4 @@ button[plain] {
     align-items: center;
     justify-content: flex-start;
 }
+
