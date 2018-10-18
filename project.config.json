@@ -10,7 +10,7 @@
 	},
 	"appid": "wxa0faf64a2bcaf71a",
 	"projectname": "xyhcloud",
-	"libVersion": "2.2.4",
+	"libVersion": "2.2.5",
 	"condition": {
 		"search": {
 			"current": -1,

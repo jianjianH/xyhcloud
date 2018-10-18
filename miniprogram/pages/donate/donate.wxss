@@ -46,7 +46,7 @@
 }
 
 .donate_content {
-    height: 600rpx;
+    height: 500rpx;
     border-radius: 8rpx;
     box-shadow: 0 0 5rpx #ccc;
     padding: 16rpx 0;

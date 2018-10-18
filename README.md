@@ -1,3 +1,7 @@
+# npm安装依赖
+mta: npm install mta-wechat-analysis --save --production
+recycle-view：npm install --save miniprogram-recycle-view（https://github.com/wechat-miniprogram/recycle-view）
+
 # 云开发 quickstart
 
 这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：

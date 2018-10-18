@@ -128,9 +128,6 @@ Page({
      * 关闭滑动
      */
     stopScroll: function(e) {
-        mta.Event.stat('donate', {
-            'stopscroll': 'true'
-        })
         clearInterval(interval);
         preTop = 0;
     }
