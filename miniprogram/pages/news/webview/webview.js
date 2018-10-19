@@ -41,7 +41,7 @@ Page({
         })
         let shareUrl = encodeURIComponent(res[0].webViewUrl);
         return {
-            title: ' ',
+            title: '公众号文章精选',
             path: '/pages/news/webview/webview?shareUrl=' + shareUrl
         }
     },

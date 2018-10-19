@@ -77,7 +77,7 @@ Page({
             'sharelist': 'true'
         })
         return {
-            title: '校友会公众号文章精选',
+            title: '公众号文章精选',
             path: '/pages/news/news_list/news_list'
         }
     }
