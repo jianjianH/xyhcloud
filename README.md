@@ -1,6 +1,8 @@
 # npm安装依赖
 mta: npm install mta-wechat-analysis --save --production
-recycle-view：npm install --save miniprogram-recycle-view（https://github.com/wechat-miniprogram/recycle-view）
+PS 从开发者工具 v1.02.1811150 版本开始，调整为根据 package.json 的 dependencies 字段构建：
+改为：npm install mta-wechat-analysis --save
+recycle-view：npm install miniprogram-recycle-view --save（https://github.com/wechat-miniprogram/recycle-view）
 
 # 云开发 quickstart
 
