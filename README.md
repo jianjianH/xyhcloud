@@ -1,3 +1,6 @@
+##用于江财北京校友会微信小程序##
+
+[校友会微信小程序使用说明](https://www.jnehuang.cn/%E6%A0%A1%E5%8F%8B%E4%BC%9A/%E6%A0%A1%E5%8F%8B%E4%BC%9A%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/)
 
 目前微信小程序中用到了两个模块，mta（数据统计）、recycle-view（列表页渲染），需要使用npm安装。
 >npm安装依赖
