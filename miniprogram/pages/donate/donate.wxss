@@ -28,9 +28,9 @@
 
 .title {
     height: 78rpx;
-    background-color: #eab90d;
+    background-color: #09bb07;
     border-radius: 4px;
-    box-shadow: 0 0 5px #eab90d;
+    box-shadow: 0 0 5px #09bb07;
     margin: 10rpx 0 35rpx 0;
     display: flex;
     flex-flow: row nowrap;
@@ -114,7 +114,7 @@ button[plain] {
     margin-left: 15rpx;
     width: 200rpx;
     height: 100rpx;
-    background-image: linear-gradient(-180deg, #ffc600 0%, #eab90d 100%);
+    background-image: linear-gradient(-180deg, #08bb07 0%, #09bb07 100%);
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -130,7 +130,7 @@ button[plain] {
     margin-left: 15rpx;
     width: 200rpx;
     height: 100rpx;
-    background-image: linear-gradient(-180deg, #ffc600 0%, #eab90d 100%);
+    background-image: linear-gradient(-180deg, #08bb07 0%, #09bb07 100%);
     display: flex;
     flex-flow: column;
     align-items: center;
