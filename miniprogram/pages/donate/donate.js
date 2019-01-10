@@ -79,8 +79,8 @@ Page({
         })
         return {
             title: '江财北京校友会捐款名单',
-            path: '/pages/donate/donate',
-            imageUrl: 'http://pb0geuvxr.bkt.clouddn.com/mp/xyhweb/donation/donate_share.png'
+            path: '/pages/donate/donate', 
+            imageUrl: 'https://cdn.jcbjxyh.cn/mp/donation/donate_share.png'
         }
     },
 

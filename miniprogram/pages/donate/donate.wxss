@@ -2,7 +2,7 @@
 
 .top {
     height: 350rpx;
-    background: url("http://pb0geuvxr.bkt.clouddn.com/mp/xyhweb/donation/wxtop.png") no-repeat center center;
+    background: url("https://cdn.jcbjxyh.cn/mp/donation/wxtop.png") no-repeat center center;
     background-size: cover;
     text-align: center;
 }

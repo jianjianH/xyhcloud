@@ -1,7 +1,7 @@
 <!--miniprogram/pages/donate/donate.wxml-->
 <view>
     <view class="top">
-        <image src="http://pb0geuvxr.bkt.clouddn.com/mp/xyhweb/donation/ganen.png"></image>
+        <image src="https://cdn.jcbjxyh.cn/mp/donation/ganen.png"></image>
     </view>
     <view class="content">
         <view class="describle">纪念母校复校40周年、建校95周年

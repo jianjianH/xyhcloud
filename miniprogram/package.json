@@ -1,4 +1,9 @@
 {
+  "name": "xyh",
+  "version": "1.0.0",
+  "description": "江财北京校友会",
+  "author": "Jne <50617837@qq.com>",
+  "license": "MIT",
   "dependencies": {
     "miniprogram-recycle-view": "0.0.6",
     "mta-wechat-analysis": "^1.3.7"
