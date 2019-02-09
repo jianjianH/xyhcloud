@@ -1,38 +1,38 @@
 {
-    "pages": [
-        "pages/donate/donate",
-        "pages/news/webview/webview",
-        "pages/news/news_list/news_list"
-    ],
-    "window": {
-        "backgroundColor": "#F6F6F6",
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#09bb07",
-        "navigationBarTitleText": "江财北京校友会",
-        "navigationBarTextStyle": "white"
-    },
-    "tabBar": {
-        "color": "#babec4",
-        "selectedColor": "#09bb07",
-        "borderStyle": "black",
-        "backgroundColor": "#ffffff",
-        "list": [
-            {
-                "pagePath": "pages/donate/donate",
-                "text": "捐款",
-                "iconPath": "images/ic_tab_donate.png",
-                "selectedIconPath": "images/ic_tab_donate_select.png"
-            },
-            {
-                "pagePath": "pages/news/news_list/news_list",
-                "text": "新闻",
-                "iconPath": "images/ic_tab_news.png",
-                "selectedIconPath": "images/ic_tab_news_select.png"
-            }
-        ]
-    },
-    "networkTimeout": {
-        "request": 10000,
-        "downloadFile": 10000
-    }
+  "pages": [
+    "pages/donate/donate",
+    "pages/news/webview/webview",
+    "pages/news/news_list/news_list"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#09bb07",
+    "navigationBarTitleText": "江财北京校友会",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#babec4",
+    "selectedColor": "#09bb07",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/donate/donate",
+        "text": "捐款",
+        "iconPath": "images/ic_tab_donate.png",
+        "selectedIconPath": "images/ic_tab_donate_select.png"
+      },
+      {
+        "pagePath": "pages/news/news_list/news_list",
+        "text": "新闻",
+        "iconPath": "images/ic_tab_news.png",
+        "selectedIconPath": "images/ic_tab_news_select.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
 }

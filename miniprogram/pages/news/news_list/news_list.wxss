@@ -54,8 +54,8 @@
 }
 
 .line {
-    width: 700rpx;
-    height: 1rpx;
-    margin: 10rpx 0rpx;
-    background-color: #88888888;
+  width: 700rpx;
+  height: 1rpx;
+  margin: 10rpx 0rpx;
+  background-color: #88888888;
 }

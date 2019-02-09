@@ -1,158 +1,158 @@
 /* miniprogram/pages/donate/donate.wxss */
 
 .top {
-    height: 350rpx;
-    background: url("https://cdn.jcbjxyh.cn/mp/donation/wxtop.png") no-repeat center center;
-    background-size: cover;
-    text-align: center;
+  height: 350rpx;
+  background: url("https://cdn.jcbjxyh.cn/mp/donation/wxtop.png") no-repeat center center;
+  background-size: cover;
+  text-align: center;
 }
 
 .top image {
-    width: 290rpx;
-    height: 240rpx;
-    margin-top: 50rpx;
+  width: 290rpx;
+  height: 240rpx;
+  margin-top: 50rpx;
 }
 
 .describle {
-    height: 100%;
-    line-height: 78rpx;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 28rpx;
-    color: #2c3e50;
+  height: 100%;
+  line-height: 78rpx;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 28rpx;
+  color: #2c3e50;
 }
 
 .content {
-    padding: 0 25rpx;
+  padding: 0 25rpx;
 }
 
 .title {
-    height: 78rpx;
-    background-color: #09bb07;
-    border-radius: 4px;
-    box-shadow: 0 0 5px #09bb07;
-    margin: 10rpx 0 35rpx 0;
-    display: flex;
-    flex-flow: row nowrap;
+  height: 78rpx;
+  background-color: #09bb07;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #09bb07;
+  margin: 10rpx 0 35rpx 0;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .title text {
-    height: 100%;
-    line-height: 78rpx;
-    text-align: center;
-    width: 20%;
-    font-size: 28rpx;
-    color: white;
+  height: 100%;
+  line-height: 78rpx;
+  text-align: center;
+  width: 20%;
+  font-size: 28rpx;
+  color: white;
 }
 
 .donate_content {
-    height: 500rpx;
-    border-radius: 8rpx;
-    box-shadow: 0 0 5rpx #ccc;
-    padding: 16rpx 0;
-    overflow: hidden;
-    display: flex;
-    flex-flow: column nowrap;
+  height: 500rpx;
+  border-radius: 8rpx;
+  box-shadow: 0 0 5rpx #ccc;
+  padding: 16rpx 0;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .donate_content_item {
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .donate_content_item text {
-    line-height: 65rpx;
-    font-size: 24rpx;
-    width: 20%;
-    text-align: center;
+  line-height: 65rpx;
+  font-size: 24rpx;
+  width: 20%;
+  text-align: center;
 }
 
 .net_error {
-    height: 600rpx;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8rpx;
-    box-shadow: 0 0 10rpx red;
-    margin: 10rpx 0 35rpx 0;
+  height: 600rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8rpx;
+  box-shadow: 0 0 10rpx red;
+  margin: 10rpx 0 35rpx 0;
 }
 
 .net_error text {
-    font-size: 24rpx;
-    color: red;
+  font-size: 24rpx;
+  color: red;
 }
 
 button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: 117rpx;
-    margin-right: 50rpx;
-    z-index: 999;
-    border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 117rpx;
+  margin-right: 50rpx;
+  z-index: 999;
+  border: none;
 }
 
 button::after {
-    border: none;
+  border: none;
 }
 
 button[plain] {
-    border: none;
+  border: none;
 }
 
 .share image {
-    width: 100rpx;
-    height: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
 }
 
 .donate_sum {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 190rpx;
-    margin-left: 15rpx;
-    width: 200rpx;
-    height: 100rpx;
-    background-image: linear-gradient(-180deg, #08bb07 0%, #09bb07 100%);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 190rpx;
+  margin-left: 15rpx;
+  width: 200rpx;
+  height: 100rpx;
+  background-image: linear-gradient(-180deg, #08bb07 0%, #09bb07 100%);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
 }
 
 .donate_num {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 64rpx;
-    margin-left: 15rpx;
-    width: 200rpx;
-    height: 100rpx;
-    background-image: linear-gradient(-180deg, #08bb07 0%, #09bb07 100%);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 64rpx;
+  margin-left: 15rpx;
+  width: 200rpx;
+  height: 100rpx;
+  background-image: linear-gradient(-180deg, #08bb07 0%, #09bb07 100%);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
 }
 
 .sum {
-    color: white;
-    text-align: center;
-    border-radius: 25rpx;
-    font-size: 28rpx;
+  color: white;
+  text-align: center;
+  border-radius: 25rpx;
+  font-size: 28rpx;
 }
 
 .office {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: flex-start;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 

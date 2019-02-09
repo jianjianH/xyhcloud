@@ -4,11 +4,11 @@ let VERSION = 0.22;
 
 let BASE_URL = "https://www.jcbjxyh.cn";
 if (DEBUG) {
-    BASE_URL = "https://test.jcbjxyh.cn";
+  BASE_URL = "https://test.jcbjxyh.cn";
 }
 
 module.exports = {
-    DEBUG: DEBUG,
-    VERSION: VERSION,
-    BASE_URL: BASE_URL,
+  DEBUG: DEBUG,
+  VERSION: VERSION,
+  BASE_URL: BASE_URL,
 }
