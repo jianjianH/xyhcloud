@@ -10,6 +10,9 @@ $RECYCLE.BIN/
 .TemporaryItems
 .Trashes
 
+# files
+miniprogram/**/*.wxss
+
 # Node.js
 node_modules/
 miniprogram_npm/

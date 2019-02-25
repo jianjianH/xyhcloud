@@ -1,0 +1,19 @@
+$red: #f44;
+$type: aaa;
+$size: 109px;
+
+/* fdsfs */
+.a {
+  width: 209px;
+  @mixin arrow;
+}
+.d {
+  color: $col_blue;
+  .c {
+    width: 20px;
+    .d {
+      width: 2px;
+    }
+  }
+}
+

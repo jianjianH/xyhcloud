@@ -17,6 +17,27 @@
 ![选择“工具”中的“构建npm”](https://upload-images.jianshu.io/upload_images/115957-7b65e4cf6121b3f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![构建完毕后即可正常使用小程序](https://upload-images.jianshu.io/upload_images/115957-d98056b7aaac0681.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+### 项目启动
+为了使开发更方便，本项目使用了 CSS 预编译，使用的是 `PostCSS`, 遵循的语法为 SCSS 语法，使用了 `GULP` 来构建，
+我们开发时建立一个 `.css` 扩展名的文件，通过 `GULP` 构建工具会处理生成对应的小程序使用的 `.wxss` 文件。
+
+全局安装 GULP : https://gulpjs.com/
+
+在终端中，进入此项目的根目录，安装 gulp 及其其他依赖：
+>npm i 安装依赖
+>`gulp`  or `npm start` 启动预编译程序 可以在 css 文件里像写 scss 一样编码开发
+
+如果在你的 .css 文件里写像 scss 格式的语法时，因为编辑器是使用 css 文档格式打开的文件，而 css 语法并不支持比如像嵌套这样的写法，所以编辑器里会有语法错误提示，请下载支持 `PostCss` 的编辑器插件，或者禁用语法报错。
+
+现在不是所有的 `SCSS` 支持的语法我们都引入了，现只引入了我们使用到的，其他如果你有需要，可以安装自己的 [PostCss](https://github.com/postcss/postcss/blob/master/README-cn.md) 插件依赖，现引入了以下这些语法支持：
+- `postcss-import` import: https://github.com/postcss/postcss-import#postcss-import
+- `postcss-mixins` mixins: https://github.com/postcss/postcss-mixins
+- `postcss-extend` extend: https://github.com/travco/postcss-extend
+- `postcss-simple-vars` 变量: https://github.com/postcss/postcss-simple-vars
+- `postcss-nested` 嵌套: https://github.com/postcss/postcss-nested
+- `postcss-color-function` 处理颜色: https://github.com/postcss/postcss-color-function
+
+
 目前的项目结构为：
 
 ```
@@ -35,7 +56,12 @@
     |-- miniprogram_npm    下载好后的依赖模块
     |   |-- miniprogram-recycle-view
     |   |-- mta-wechat-analysis
+    |-- common    公共文件
+    |   |-- css_mixins.js       样式中使用的公共 mixins 文件
+    |   |-- css_variables.js    样式中使用的公共 variables 文件
     |-- pages
+    |   |-- index    首页
+    |   |   |-- ...
     |   |-- donate    捐款页面
     |   |   |-- donate.js
     |   |   |-- donate.json

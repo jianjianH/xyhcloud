@@ -1,0 +1,42 @@
+{
+  "name": "xyhcloud",
+  "version": "1.0.0",
+  "description": "江财北京校友会",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-print": "^5.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-watch": "^5.0.1",
+    "postcss-color-function": "^4.0.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.1",
+    "postcss-scss": "^2.0.0",
+    "postcss-simple-vars": "^5.0.1",
+    "postcss-strip-inline-comments": "^0.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jianjianH/xyhcloud.git"
+  },
+  "keywords": [
+    "江财北京校友会"
+  ],
+  "author": "jc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jianjianH/xyhcloud/issues"
+  },
+  "homepage": "https://github.com/jianjianH/xyhcloud#readme"
+}
