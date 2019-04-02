@@ -1,0 +1,10 @@
+<view class="interset-box">
+  <view
+    class="interset-item"
+    wx:for="{{intersetGroups}}"
+    wx:key="{{item.id}}"
+  >
+    <image class="interset-icon" src="{{item.image}}"></image>
+    <text class="interset-tit">{{item.name}}</text>
+  </view>
+</view>

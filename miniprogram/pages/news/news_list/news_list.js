@@ -42,6 +42,7 @@ Page({
         that.setData({
           recycleList: res.data
         })
+        console.log(res.data);
       })
       .catch(error => {
         console.log(error)

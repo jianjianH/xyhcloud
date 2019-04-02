@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/donate/donate",
     "pages/news/webview/webview",
     "pages/news/news_list/news_list"
@@ -7,27 +8,45 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#09bb07",
+    "navigationBarBackgroundColor": "#ff8000",
     "navigationBarTitleText": "江财北京校友会",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#babec4",
-    "selectedColor": "#09bb07",
+    "color": "#ccc",
+    "selectedColor": "#ff8000",
     "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#fff",
     "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon-tab-home.png",
+        "selectedIconPath": "images/icon-tab-home-selected.png"
+      },
       {
         "pagePath": "pages/donate/donate",
         "text": "捐款",
-        "iconPath": "images/ic_tab_donate.png",
-        "selectedIconPath": "images/ic_tab_donate_select.png"
+        "iconPath": "images/icon-tab-donate.png",
+        "selectedIconPath": "images/icon-tab-donate-selected.png"
       },
       {
         "pagePath": "pages/news/news_list/news_list",
         "text": "新闻",
-        "iconPath": "images/ic_tab_news.png",
-        "selectedIconPath": "images/ic_tab_news_select.png"
+        "iconPath": "images/icon-tab-news.png",
+        "selectedIconPath": "images/icon-tab-news-selected.png"
+      },
+      {
+        "pagePath": "pages/news/news_list/news_list",
+        "text": "足球",
+        "iconPath": "images/icon-tab-football.png",
+        "selectedIconPath": "images/icon-tab-football-selected.png"
+      },
+      {
+        "pagePath": "pages/news/news_list/news_list",
+        "text": "我的",
+        "iconPath": "images/icon-tab-my.png",
+        "selectedIconPath": "images/icon-tab-my-selected.png"
       }
     ]
   },

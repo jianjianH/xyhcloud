@@ -1,19 +1,39 @@
-$red: #f44;
-$type: aaa;
-$size: 109px;
-
-/* fdsfs */
-.a {
-  width: 209px;
-  @mixin arrow;
-}
-.d {
-  color: $col_blue;
-  .c {
-    width: 20px;
-    .d {
+// 公共样式
+.pm {
+  width: 100%;
+  padding: 30rpx;
+  margin-top: 30rpx;
+  background: $col_white;
+  box-sizing: border-box;
+  &-tit {
+    height: 40rpx;
+    line-height: 40rpx;
+    margin-bottom: 30rpx;
+    font-size: $fs_big;
+    color: $col_black;
+    &::before {
+      display: inline-block;
+      content: " ";
       width: 2px;
+      height: 32rpx;
+      background: $col_orange;
+      border-radius: 2px;
+      margin-top: 4rpx;
+      vertical-align: top;
+    }
+    .tit {
+      padding-left: 20rpx;
+      display: inline-block;
+      vertical-align: top;
     }
   }
 }
-
+// swiper-banner
+.swiper-banner-box {
+  width: 100%;
+  height: 375rpx;
+  image {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view>
+  <!-- swiper-banner begin -->
+  <swiper
+    class="swiper-banner-box"
+    indicator-dots="{{swiperBanner.isShowIndicatorDots}}"
+    autoplay="{{swiperBanner.autoplay}}"
+    interval="{{swiperBanner.interval}}"
+    duration="{{swiperBanner.duration}}"
+    circular="{{swiperBanner.circular}}"
+    indicator-color="{{swiperBanner.indicatorColor}}"
+    indicator-active-color="{{swiperBanner.indicatorActiveColor}}"
+  >
+    <block
+      wx:for="{{swiperBanner.banners}}"
+      wx:for-item="banner"
+      wx:key="{{banner.banner_id}}"
+    >
+      <swiper-item
+        bindtap="jumpToPage"
+        data-link="{{banner.url}}"
+        data-linktype="{{banner.banner_type}}"
+      >
+        <image mode="scaleToFill" src="{{banner.image_url}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- swiper-banner end -->
+  <!-- interset begin -->
+  <view class="pm">
+    <view class="pm-tit">
+      <text class="tit">校友会兴趣组织</text>
+    </view>
+    <interset interset-groups="{{intersetGroups}}"></interset>
+
+  </view>
+  <!-- interset end -->
+  <!-- active begin -->
+  <view class="pm">
+    <view class="pm-tit">
+      <text class="tit">活动分类</text>
+    </view>
+    <!-- <interset interset-groups="{{intersetGroups}}"></interset> -->
+
+  </view>
+  <!-- active end -->
+</view>
